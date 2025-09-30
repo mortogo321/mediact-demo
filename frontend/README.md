@@ -138,20 +138,6 @@ catch (error: any) {
 }
 ```
 
-## Common Issues
-
-### CORS Error
-Make sure the backend API has CORS enabled for `http://localhost:3000`
-
-### API Connection Failed
-Verify the backend is running on `http://localhost:8000` and `NEXT_PUBLIC_API_URL` is correctly set
-
-### Authentication Issues
-Clear localStorage and try logging in again:
-```javascript
-localStorage.clear()
-```
-
 ## Building for Production
 
 ```bash
@@ -170,9 +156,3 @@ vercel deploy
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
-
-> **Note**: In production, update `NEXT_PUBLIC_API_URL` to your production API URL
-
-## License
-
-MIT

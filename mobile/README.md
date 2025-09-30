@@ -204,14 +204,6 @@ table_calendar: ^3.0.9   # Calendar widget (optional)
 
 > **Note:** This app is for **nurses only**. Head nurses should use the web application.
 
-## Troubleshooting
-
-### Cannot Connect to Backend
-1. Check if backend is running
-2. Verify API URL in `api_service.dart`
-3. For physical devices, ensure device and computer are on same network
-4. Check firewall settings
-
 ### Build Errors
 ```bash
 # Clean build
@@ -228,33 +220,3 @@ flutter doctor --android-licenses
 ### iOS Signing Issues
 - Open `ios/Runner.xcworkspace` in Xcode
 - Configure signing team
-
-## Screenshots
-
-### Login Screen
-- Email and password fields
-- Sample credentials display
-- Loading state
-
-### Schedule Screen
-- List of assigned shifts
-- Status badges for leave requests
-- Pull-to-refresh
-
-### Leave Request Dialog
-- Date and time display
-- Reason input field
-- Submit button
-
-## Future Enhancements
-
-- [ ] Calendar view for schedule
-- [ ] Push notifications for leave status
-- [ ] Dark mode support
-- [ ] Offline mode with local caching
-- [ ] Leave history page
-- [ ] Profile settings
-
-## License
-
-MIT

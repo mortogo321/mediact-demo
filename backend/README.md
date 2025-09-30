@@ -109,69 +109,6 @@ GET /leave-requests?status=pending - Filter by status
 PATCH /leave-requests/:id/approve - Approve/reject leave (Head Nurse)
 ```
 
-## Sample API Usage
-
-### Register
-
-```bash
-curl -X POST http://localhost:8000/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "Nurse Jane",
-    "email": "jane@hospital.com",
-    "password": "password123",
-    "role": "nurse"
-  }'
-```
-
-### Login
-
-```bash
-curl -X POST http://localhost:8000/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "head@hospital.com",
-    "password": "password123"
-  }'
-```
-
-### Create Shift (requires HEAD_NURSE role)
-
-```bash
-curl -X POST http://localhost:8000/shifts \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -d '{
-    "date": "2025-10-15",
-    "start_time": "08:00:00",
-    "end_time": "16:00:00"
-  }'
-```
-
-### Assign Shift (requires HEAD_NURSE role)
-
-```bash
-curl -X POST http://localhost:8000/shift-assignments \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -d '{
-    "user_id": 2,
-    "shift_id": 1
-  }'
-```
-
-### Request Leave (requires NURSE role)
-
-```bash
-curl -X POST http://localhost:8000/leave-requests \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -d '{
-    "shift_assignment_id": 1,
-    "reason": "Medical appointment"
-  }'
-```
-
 ## Project Structure
 
 ```
