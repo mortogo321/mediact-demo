@@ -53,13 +53,13 @@ npm run build
 npm run start:prod
 ```
 
-The API will be available at `http://localhost:3000`
+The API will be available at `http://localhost:8000`
 
 ## API Documentation
 
 📚 **Swagger UI is available in development mode at:**
 ```
-http://localhost:3000/api/docs
+http://localhost:8000/api/docs
 ```
 
 This interactive documentation allows you to:
@@ -114,7 +114,7 @@ PATCH /leave-requests/:id/approve - Approve/reject leave (Head Nurse)
 ### Register
 
 ```bash
-curl -X POST http://localhost:3000/auth/register \
+curl -X POST http://localhost:8000/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Nurse Jane",
@@ -127,7 +127,7 @@ curl -X POST http://localhost:3000/auth/register \
 ### Login
 
 ```bash
-curl -X POST http://localhost:3000/auth/login \
+curl -X POST http://localhost:8000/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "head@hospital.com",
@@ -138,7 +138,7 @@ curl -X POST http://localhost:3000/auth/login \
 ### Create Shift (requires HEAD_NURSE role)
 
 ```bash
-curl -X POST http://localhost:3000/shifts \
+curl -X POST http://localhost:8000/shifts \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -151,7 +151,7 @@ curl -X POST http://localhost:3000/shifts \
 ### Assign Shift (requires HEAD_NURSE role)
 
 ```bash
-curl -X POST http://localhost:3000/shift-assignments \
+curl -X POST http://localhost:8000/shift-assignments \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -163,7 +163,7 @@ curl -X POST http://localhost:3000/shift-assignments \
 ### Request Leave (requires NURSE role)
 
 ```bash
-curl -X POST http://localhost:3000/leave-requests \
+curl -X POST http://localhost:8000/leave-requests \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{

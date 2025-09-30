@@ -26,7 +26,7 @@ export default function AssignShiftPage() {
     try {
       const [shiftsRes, usersRes] = await Promise.all([
         shiftsApi.getAll(),
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`, {
+        axios.get(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/users`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('access_token')}`,
           },

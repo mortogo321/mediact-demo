@@ -4,9 +4,9 @@ import '../models/user.dart';
 import '../models/schedule.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://10.0.2.2:3000'; // Android emulator localhost
-  // Use 'http://localhost:3000' for iOS simulator
-  // Use your actual IP for physical devices
+  static const String baseUrl = 'http://10.0.2.2:8000'; // Android emulator localhost
+  // Use 'http://localhost:8000' for iOS simulator
+  // Use your actual IP:8000 for physical devices
 
   late final Dio _dio;
 

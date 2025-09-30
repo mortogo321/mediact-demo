@@ -14,7 +14,7 @@ Next.js-based web application for the Nurse Scheduling System.
 
 - Node.js (v18 or higher)
 - npm or yarn
-- Backend API running on http://localhost:3000
+- Backend API running on http://localhost:8000
 
 ## Installation
 
@@ -25,7 +25,7 @@ npm install
 # Copy environment file
 cp .env.example .env.local
 
-# Edit .env.local if needed (default: http://localhost:3000)
+# Edit .env.local if needed (default: http://localhost:8000)
 ```
 
 ## Running the Application
@@ -39,7 +39,7 @@ npm run build
 npm start
 ```
 
-The application will be available at `http://localhost:3001`
+The application will be available at `http://localhost:3000`
 
 ## Project Structure
 
@@ -141,10 +141,10 @@ catch (error: any) {
 ## Common Issues
 
 ### CORS Error
-Make sure the backend API has CORS enabled for `http://localhost:3001`
+Make sure the backend API has CORS enabled for `http://localhost:3000`
 
 ### API Connection Failed
-Verify the backend is running on `http://localhost:3000` and `NEXT_PUBLIC_API_URL` is correctly set
+Verify the backend is running on `http://localhost:8000` and `NEXT_PUBLIC_API_URL` is correctly set
 
 ### Authentication Issues
 Clear localStorage and try logging in again:
@@ -168,7 +168,7 @@ vercel deploy
 ## Environment Variables
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
 > **Note**: In production, update `NEXT_PUBLIC_API_URL` to your production API URL

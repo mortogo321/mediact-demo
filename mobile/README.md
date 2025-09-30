@@ -36,13 +36,13 @@ Update the API URL in `lib/services/api_service.dart`:
 
 ```dart
 // For Android Emulator (default)
-static const String baseUrl = 'http://10.0.2.2:3000';
+static const String baseUrl = 'http://10.0.2.2:8000';
 
 // For iOS Simulator
-static const String baseUrl = 'http://localhost:3000';
+static const String baseUrl = 'http://localhost:8000';
 
 // For Physical Device (use your computer's IP)
-static const String baseUrl = 'http://192.168.x.x:3000';
+static const String baseUrl = 'http://192.168.x.x:8000';
 ```
 
 ### Finding Your IP Address
