@@ -241,12 +241,3 @@ flutter run
 3. Commit your changes
 4. Push to the branch
 5. Open a Pull Request
-
-## 📄 License
-
-MIT License
-
----
-
-**สร้างโดย:** Coding Assignment - ระบบจัดเวรพยาบาล
-**เวอร์ชัน:** 1.0.0
